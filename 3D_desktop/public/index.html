@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="id">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+
+    <title>EVO 3D Intel - Desktop Module</title>
+
+    <link rel="icon" type="image/png" href="/favicon.png" />
+    <link rel="stylesheet" href="build/bundle.css" />
+    <link rel="stylesheet" href="global.css" />
+
+    <!-- MODEL VIEWER     -->
+    <script
+      type="module"
+      src="https://unpkg.com/@google/model-viewer/dist/model-viewer.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/@google/model-viewer/dist/model-viewer-legacy.js"
+    ></script>
+    <link href="https://vjs.zencdn.net/7.8.4/video-js.css" rel="stylesheet" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.2/TweenMax.min.js"></script>
+
+    <script src="build/bundle.js"></script>
+  </head>
+
+  <body>
+    <div id="evo3d-placeholder"></div>
+    <style>
+      #evo3d-placeholder {
+        width: 100%;
+        height: 100%;
+      }
+    </style>
+  </body>
+  <script>
+    const jsonContent = {
+  "assets": {
+    "evo_screens": {
+      "screen0": "./assets/model3d/screens/screen00.png",
+      "screen1": "./assets/model3d/screens/screen01.png",
+      "screen2": "./assets/model3d/screens/screen02.png",
+      "screen3": "./assets/model3d/screens/screen03.png",
+      "screen4": "./assets/model3d/screens/screen04.png",
+      "screen5": "./assets/model3d/screens/screen05.png",
+      "screen6": "./assets/model3d/screens/screen06.png"
+    },
+    "model": "./assets/model3d/model.glb",
+    "lights": "./assets/model3d/lights_reflection.png",
+    "background": "./assets/images/background.png",
+    "hotspot_background": "./assets/images/background.png",
+    "checkmark": "./assets/images/checkmark.png",
+    "blue_checkmark": "./assets/images/selected-checkmark.png",
+    "close_device": "./assets/images/close-device.svg",
+    "open_device": "./assets/images/open-device.svg",
+    "down_arrow": "./assets/images/arrow_down.svg",
+    "back_arrow": "./assets/images/back_arrow.svg",
+    "evo_checkmark": "./assets/images/evo-checkmark.png",
+    "loader": "./assets/images/loader.gif",
+    "exit_button": "./assets/images/exit.svg",
+    "list_checkmark": "./assets/images/list-checkmark.png",
+    "right_arrow": "./assets/images/right-arrow.png",
+    "flash_front": "./assets/images/flash_front.png",
+    "flash_back": "./assets/images/flash_back.png",
+    "flash_Fx": "./assets/images/flash_Fx.png",
+    "ui": "./assets/images/ui.png",
+    "ui_pic01": "./assets/images/ui_pic01.png",
+    "ui_pic02": "./assets/images/ui_pic02.png",
+    "ui_pic03": "./assets/images/ui_pic03.png",
+    "ui_box01": "./assets/images/ui_box01.png",
+    "ui_box02": "./assets/images/ui_box02.png",
+    "ui_text": "./assets/images/ui_text.png",
+    "core_i5": "./assets/images/core_i5.png",
+    "core_i5_FX": "./assets/images/core_i5_FX.png",
+    "core_i7": "./assets/images/core_i7.png",
+    "core_i7_FX": "./assets/images/core_i7_FX.png",
+    "leds": "./assets/images/leds.png",
+    "leds_front": "./assets/images/leds_front.png",
+    "leds_back": "./assets/images/leds_back.png",
+    "leds_FX": "./assets/images/leds_FX.svg",
+    "ports": "./assets/images/ports.png",
+    "ports_front": "./assets/images/ports_front.png",
+    "ports_back": "./assets/images/ports_back.png",
+    "ports_FX": "./assets/images/ports_FX.png",
+    "network": "./assets/images/network.svg",
+    "network_pic01": "./assets/images/network_pic01.png",
+    "network_pic02": "./assets/images/network_pic02.png",
+    "network_pic03": "./assets/images/network_pic03.png",
+    "network_back": "./assets/images/network_back.png",
+    "network_front": "./assets/images/network_front.png",
+    "network_FX": "./assets/images/network_FX.svg",
+    "zoomify_glass": "./assets/images/zoomify_glass.png",
+    "zoomify_glassFront": "./assets/images/zoomify_glassFront.png",
+    "zoomify_glassBack": "./assets/images/zoomify_glassBack.png",
+    "zoomify_glass_FX": "./assets/images/zoomify_glass_FX.svg"
+  },
+  "header": {
+    "headline": "Laptop semakin berarti, jadi kami memastikannya dapat melakukan lebih\u00A0banyak\u00A0lagi.",
+    "subheadline_mobile": "Gunakan layar sentuh Anda untuk menjelajah, memutar, dan memperbesar.",
+    "subheadline_desktop": "Gunakan mouse atau trackpad Anda untuk menjelajah, memutar, dan memperbesar."
+  },
+  "hotspots": [
+    {
+      "id": 0,
+      "copy": "Aktif dalam sekejap",
+      "description": "Dengan pengaktifan instan, PC Anda dapat beralih dari mode tidur menjadi siap digunakan dalam waktu kurang dari satu detik.",
+      "url": {
+        "data_account": "5226411160001",
+        "video_id": "6212535311001",
+        "thumbnail": "./assets/images/thumbnails/thumbnail.png"
+      }
+    },
+    {
+      "id": 1,
+      "copy": "Tontonan imersif",
+      "description": "Tampilan yang indah menghidupkan visual Anda dengan resolusi yang tajam dan warna yang hidup.",
+      "url": {
+        "data_account": "5226411160001",
+        "video_id": "6212528360001",
+        "thumbnail": "./assets/images/thumbnails/thumbnail2.png"
+      }
+    },
+    {
+      "id": 2,
+      "copy": "Selesaikan banyak hal dengan cepat",
+      "description": "Nikmati performa ultra responsif dari prosesor Intel® Core™ Generasi ke-11.",
+      "url": {
+        "data_account": "5226411160001",
+        "video_id": "6212365388001",
+        "thumbnail": "./assets/images/thumbnails/thumbnail3.png"
+      }
+    },
+    {
+      "id": 3,
+      "copy": "Masa pakai baterai lebih\u00A0lama",
+      "description": "Tetap produktif dengan PC yang mengoptimalkan masa pakai baterai dan mengisi ulang daya dalam sekejap.",
+      "url": {
+        "data_account": "5226411160001",
+        "video_id": "6212538108001",
+        "thumbnail": "./assets/images/thumbnails/thumbnail4.png"
+      }
+    },
+    {
+      "id": 4,
+      "copy": "Koneksi cepat dan andal",
+      "description": "Obrolan video atau berbagi file dengan koneksi yang dapat Anda andalkan menggunakan Intel® Wi-Fi 6 (Gig+).<sup>1</sup>",
+      "url": {
+        "data_account": "5226411160001",
+        "video_id": "6212519807001",
+        "thumbnail": "./assets/images/thumbnails/thumbnail5.png"
+      }
+    },
+    {
+      "id": 5,
+      "copy": "Konektivitas kabel universal",
+      "description": "Menghubungkan perangkat lain ke PC Anda menjadi mudah, cepat, dan aman dengan teknologi Thunderbolt™ 4.<sup>2</sup>",
+      "url": {
+        "data_account": "5226411160001",
+        "video_id": "6212530600001",
+        "thumbnail": "./assets/images/thumbnails/thumbnail6.png"
+      }
+    }
+  ],
+  "back_copy": "Kembali",
+  "footer": {
+    "close_device": "Tutup perangkat",
+    "open_device": "Buka perangkat",
+    "legal": {
+      "copy": "Hanya untuk tujuan informasi. Perangkat sebenarnya mungkin beragam.",
+      "link": "HUKUM",
+      "description": "<p>Teknologi Intel mungkin memerlukan pengaktifan perangkat keras, perangkat lunak, atau aktivasi layanan yang mendukung.<br />Untuk informasi selengkapnya tentang hasil performa dan benchmark, kunjungi www.intel.com/benchmarks</p><p><sup>1</sup>Untuk informasi selengkapnya tentang Intel® Wi-Fi 6 (Gig+), kunjungi intel.com/wi-fi6</p><p><sup>2</sup>Tidak ada produk atau komponen yang bisa sepenuhnya aman.</p><p>© Intel Corporation. Intel, logo Intel, dan merek Intel lainnya adalah merek dagang dari Intel Corporation atau anak perusahaannya. Nama dan merek lain adalah hak milik dari masing-masing pemiliknya.</p>"
+    }
+  }
+    };
+
+    const videoContent = {
+      en: [
+        {
+          id: 0,
+          data_account: "5226411160001",
+          video_id: "6212535311001",
+        },
+        {
+          id: 1,
+          data_account: "5226411160001",
+          video_id: "6212528360001",
+        },
+        {
+          id: 2,
+          data_account: "5226411160001",
+          video_id: "6212365388001",
+        },
+        {
+          id: 3,
+          data_account: "5226411160001",
+          video_id: "6212538108001",
+        },
+        {
+          id: 4,
+          data_account: "5226411160001",
+          video_id: "6212519807001",
+        },
+        {
+          id: 5,
+          data_account: "5226411160001",
+          video_id: "6212530600001",
+        },
+      ],
+      es: [],
+      it: [],
+      fr: [],
+      ar: [],
+      vi: [],
+    };
+
+    // element where the module should be mounted
+    const $el = document.getElementById("evo3d-placeholder");
+
+    // Initialize the module
+    window.evo3DMobile($el, jsonContent, videoContent.en);
+  </script>
+</html>

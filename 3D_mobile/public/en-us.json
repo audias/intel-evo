@@ -1,0 +1,145 @@
+{
+  "assets": {
+    "evo_screens": {
+      "screen0": "./assets/model3d/screens/screen00.png",
+      "screen1": "./assets/model3d/screens/screen01.png",
+      "screen2": "./assets/model3d/screens/screen02.png",
+      "screen3": "./assets/model3d/screens/screen03.png",
+      "screen4": "./assets/model3d/screens/screen04.png",
+      "screen5": "./assets/model3d/screens/screen05.png",
+      "screen6": "./assets/model3d/screens/screen06.png"
+    },
+    "model": "./assets/model3d/model.glb",
+    "lights": "./assets/model3d/lights_reflection.png",
+    "background": "./assets/images/background.png",
+    "hotspot_background": "./assets/images/background.png",
+    "checkmark": "./assets/images/checkmark.png",
+    "blue_checkmark": "./assets/images/selected-checkmark.png",
+    "close_device": "./assets/images/close-device.svg",
+    "open_device": "./assets/images/open-device.svg",
+    "down_arrow": "./assets/images/arrow_down.svg",
+    "back_arrow": "./assets/images/back_arrow.svg",
+    "evo_checkmark": "./assets/images/evo-checkmark.png",
+    "loader": "./assets/images/loader.gif",
+    "exit_button": "./assets/images/exit.svg",
+    "list_checkmark": "./assets/images/list-checkmark.png",
+    "right_arrow": "./assets/images/right-arrow.png",
+
+    "flash_front": "./assets/images/flash_front.png",
+    "flash_back": "./assets/images/flash_back.png",
+    "flash_Fx": "./assets/images/flash_Fx.png",
+
+    "ui": "./assets/images/ui.png",
+    "ui_pic01": "./assets/images/ui_pic01.png",
+    "ui_pic02": "./assets/images/ui_pic02.png",
+    "ui_pic03": "./assets/images/ui_pic03.png",
+    "ui_box01": "./assets/images/ui_box01.png",
+    "ui_box02": "./assets/images/ui_box02.png",
+    "ui_text": "./assets/images/ui_text.png",
+
+    "core_i5": "./assets/images/core_i5.png",
+    "core_i5_FX": "./assets/images/core_i5_FX.png",
+    "core_i7": "./assets/images/core_i7.png",
+    "core_i7_FX": "./assets/images/core_i7_FX.png",
+
+    "leds": "./assets/images/leds.png",
+    "leds_front": "./assets/images/leds_front.png",
+    "leds_back": "./assets/images/leds_back.png",
+    "leds_FX": "./assets/images/leds_FX.svg",
+
+    "ports": "./assets/images/ports.png",
+    "ports_front": "./assets/images/ports_front.png",
+    "ports_back": "./assets/images/ports_back.png",
+    "ports_FX": "./assets/images/ports_FX.png",
+
+    "network": "./assets/images/network.svg",
+    "network_pic01": "./assets/images/network_pic01.png",
+    "network_pic02": "./assets/images/network_pic02.png",
+    "network_pic03": "./assets/images/network_pic03.png",
+    "network_back": "./assets/images/network_back.png",
+    "network_front": "./assets/images/network_front.png",
+    "network_FX": "./assets/images/network_FX.svg",
+
+    "zoomify_glass": "./assets/images/zoomify_glass.png",
+    "zoomify_glassFront": "./assets/images/zoomify_glassFront.png",
+    "zoomify_glassBack": "./assets/images/zoomify_glassBack.png",
+    "zoomify_glass_FX": "./assets/images/zoomify_glass_FX.svg"
+  },
+  "header": {
+    "headline": "The laptop means more than ever, so we made sure it can do more than ever.",
+    "subheadline_mobile": "Use your touchscreen to explore, rotate, and zoom.",
+    "subheadline_desktop": "Use your mouse or trackpad to explore, rotate, and zoom."
+  },
+  "hotspots": [
+    {
+      "id": 0,
+      "copy": "Wake in a flash",
+      "description": "With instant wake your PC can go from sleep to ready in less than a second.",
+      "url": {
+        "data_account": "5226411160001",
+        "video_id": "6199926458001",
+        "thumbnail": "./assets/images/thumbnails/thumbnail.png"
+      }
+    },
+    {
+      "id": 1,
+      "copy": "Immersive viewing",
+      "description": "A beautiful display brings your visuals to life in crisp resolution and vivid colors.",
+      "url": {
+        "data_account": "5226411160001",
+        "video_id": "6199924740001",
+        "thumbnail": "./assets/images/thumbnails/thumbnail2.png"
+      }
+    },
+    {
+      "id": 2,
+      "copy": "Get things done fast",
+      "description": "Enjoy ultra-responsive performance from the 11th Gen Intel&reg; Core&trade; processors.",
+      "url": {
+        "data_account": "5226411160001",
+        "video_id": "6199925965001",
+        "thumbnail": "./assets/images/thumbnails/thumbnail3.png"
+      }
+    },
+    {
+      "id": 3,
+      "copy": "Unplug for longer",
+      "description": "Stay in the flow with a PC that optimizes your battery life and recharges in a flash.",
+      "url": {
+        "data_account": "5226411160001",
+        "video_id": "6199924554001",
+        "thumbnail": "./assets/images/thumbnails/thumbnail4.png"
+      }
+    },
+    {
+      "id": 4,
+      "copy": "Fast, reliable connections",
+      "description": "Video chat or share files with a connection you can count on using Intel® Wi-Fi 6 (Gig+).<sup>1</sup>",
+      "url": {
+        "data_account": "5226411160001",
+        "video_id": "6199925966001",
+        "thumbnail": "./assets/images/thumbnails/thumbnail5.png"
+      }
+    },
+    {
+      "id": 5,
+      "copy": "Universal cable connectivity",
+      "description": "Makes plugging other devices to your PC simple, fast and secure with Thunderbolt™ 4.<sup>9</sup>",
+      "url": {
+        "data_account": "5226411160001",
+        "video_id": "6199924555001",
+        "thumbnail": "./assets/images/thumbnails/thumbnail6.png"
+      }
+    }
+  ],
+  "back_copy": "Back",
+  "footer": {
+    "close_device": "Close device",
+    "open_device": "Open device",
+    "legal": {
+      "copy": "For informational purposes only. Actual device may vary.",
+      "link": "LEGAL",
+      "description": "<p>Intel technologies may require enabled hardware, software or service activation.<br />For more complete information about performance and benchmark results, visit www.intel.com/benchmarks</p><p><sup>1</sup>For more complete information about Intel® Wi-Fi 6 (Gig+), visit intel.com/wi-fi6</p><p><sup>2</sup>No product or component can be absolutely secure.</p><p>© Intel Corporation. Intel, the Intel logo, and other Intel marks are trademarks of Intel Corporation or its subsidiaries. Other names and brands may be claimed as the property of others.</p>"
+    }
+  }
+}

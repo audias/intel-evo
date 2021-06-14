@@ -1,0 +1,177 @@
+* {
+  margin: 0;
+}
+
+@font-face {
+  font-family: IntelClear;
+  src: url("./fonts/IntelClear-Regular.ttf");
+}
+
+html,
+body {
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+
+body {
+  color: #333;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: IntelClear, "Helvetica Neue", sans-serif;
+}
+
+a {
+  color: #ffffff;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+a:visited {
+  color: #ffffff;
+}
+
+p {
+  color: #ffffff;
+  font-size: 0.9rem;
+}
+
+label {
+  display: block;
+}
+
+input,
+button,
+select,
+textarea {
+  font-family: inherit;
+  font-size: inherit;
+  -webkit-padding: 0.4em 0;
+  padding: 0.4em;
+  margin: 0 0 0.5em 0;
+  box-sizing: border-box;
+  border: 1px solid #ccc;
+  border-radius: 2px;
+}
+
+input:disabled {
+  color: #ccc;
+}
+
+button {
+  color: #333;
+  background-color: #f4f4f4;
+  outline: none;
+}
+
+button:disabled {
+  color: #999;
+}
+
+button:not(:disabled):active {
+  background-color: #ddd;
+}
+
+button:focus {
+  border-color: #666;
+}
+
+.img {
+  width: 100%;
+}
+
+.vjs-big-play-button {
+  top: 50% !important;
+  left: 50% !important;
+  margin-left: -3rem !important;
+}
+
+.hotspot-selected {
+  opacity: 1 !important;
+  border-radius: 32px;
+  border: 0;
+  box-sizing: border-box;
+  height: 24px;
+  position: relative;
+  transition: opacity 0.3s;
+  width: 24px;
+  background-image: url("./assets/images/selected-checkmark.png") !important;
+  background-size: contain;
+}
+.hotspot:not([data-visible]) {
+  opacity: 0 !important;
+  
+}
+
+.hotspot-selected .circle {
+  display: inline-block;
+  width: 24px;
+  height: 24px;
+  border-radius: 50%;
+  background-color: #1196cc;
+  transform: scale(2);
+  opacity: 0.1;
+  position: relative;
+  z-index: -1;
+}
+
+.vjs-fluid {
+  height: 100% !important;
+  width: 100% !important;
+}
+
+.hotspot-selected .scale-in-center {
+  animation: scale-in-center 1.3s cubic-bezier(0.25, 0.46, 0.45, 0.94) infinite;
+}
+
+@keyframes scale-in-center {
+  0% {
+    transform: scale(0);
+    opacity: 1;
+  }
+  60% {
+    opacity: 1;
+  }
+  100% {
+    transform: scale(1.1);
+    opacity: 0.1;
+  }
+}
+
+.legal p {
+  font-size: .6rem;
+  margin: 5px 0;
+}
+
+.footer.svelte-12t75nr .container.svelte-12t75nr {
+		width: 95%;
+}
+
+.header.svelte-7wckle h3.svelte-7wckle {
+	line-height: 1.1em;
+}
+
+.features.svelte-fakij8 ul .text-container.svelte-fakij8 {
+	font-size: 0.9em;
+}
+
+.footer.svelte-12t75nr .container .legal-copy-container p.svelte-12t75nr.legal-link {
+	padding-top: 0.5em;
+}
+
+sup {
+	vertical-align: baseline;
+	position: relative;
+	top: -0.4em;
+}
+
+.footer.svelte-12t75nr .container .legal-copy-container p.svelte-12t75nr {
+    white-space: pre;
+}
+
+.footer.svelte-12t75nr .container .legal-copy-container.svelte-12t75nr {
+    margin-right: 1.5rem;
+}
